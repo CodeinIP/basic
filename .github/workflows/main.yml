@@ -59,6 +59,6 @@ jobs:
       - name: Print pwd
         run: pwd
       - name: run file using eslint
-        run: npx eslint .
+        run: npx eslint . --fix
       - name: run my application
         run: node index.js
