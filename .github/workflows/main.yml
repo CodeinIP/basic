@@ -1,1 +1,29 @@
 # Workflow
+# YAML -> A series of steps or operations
+# that can be read by machine to automate tasks
+# YAML -> works with key value pairs
+# Key : Value
+title: Website name
+description: A website to upload files and photos
+
+# string, arrays, objects
+# ARRAY
+tags:
+  - technology
+  - images
+  - creative
+
+# Indentation matters
+# spaces
+
+# OBJECTS
+address:
+  street: 123
+  city: Bilaspur
+  state: Himachal Pradesh
+
+# GitHub Actions
+# env variables
+
+${{env.VALUE}}
+${{github.VARIABLE_NAME}}
