@@ -1,29 +1,58 @@
-# Workflow
-# YAML -> A series of steps or operations
-# that can be read by machine to automate tasks
-# YAML -> works with key value pairs
-# Key : Value
-title: Website name
-description: A website to upload files and photos
+# # Workflow
+# # YAML -> A series of steps or operations
+# # that can be read by machine to automate tasks
+# # YAML -> works with key value pairs
+# # Key : Value
+# title: Website name
+# description: A website to upload files and photos
 
-# string, arrays, objects
-# ARRAY
-tags:
-  - technology
-  - images
-  - creative
+# # string, arrays, objects
+# # ARRAY
+# tags:
+#   - technology
+#   - images
+#   - creative
 
-# Indentation matters
-# spaces
+# # Indentation matters
+# # spaces
 
-# OBJECTS
-address:
-  street: 123
-  city: Bilaspur
-  state: Himachal Pradesh
+# # OBJECTS
+# address:
+#   street: 123
+#   city: Bilaspur
+#   state: Himachal Pradesh
 
-# GitHub Actions
-# env variables
+# # GitHub Actions
+# # env variables
 
-${{env.VALUE}}
-${{github.VARIABLE_NAME}}
+# ${{env.VALUE}}
+# ${{github.VARIABLE_NAME}}
+
+# # yaml is a configuration file
+
+# GitHub
+# trigger on certain events
+# push, on pr request
+# on -> on trigger, on push to codebase, raising a pr to codebase
+# Workflow -> 
+# how to run
+# jobs - a taks that can be run
+# define a series of steps inside a job to execute the workflow
+# steps -> a sequence of tasks or actions that make up a job.
+
+
+name: My Application
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print Hello world
+        run: echo "Hello world"
+      - name: Print NPM version
+        run: npm --version
+      - name: Print Node version
+        run: node --version
