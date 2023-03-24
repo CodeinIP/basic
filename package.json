@@ -1,0 +1,26 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "- ***Continuous Integration*** is the software engineering practive that requires frequent commits to a shared repository. You may have gotten so used to this practice that you may wonder why there's a term for it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inder-Pal-github/basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inder-Pal-github/basic/issues"
+  },
+  "homepage": "https://github.com/Inder-Pal-github/basic#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  },
+  "dependencies": {
+    "shortid": "^2.2.16"
+  }
+}

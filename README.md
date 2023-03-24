@@ -17,3 +17,13 @@ when code is committed to a repository, it can be build adn tested against setup
 ## What are GitHub Actions?
 - GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, deployment pipeline.
 - You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
+- ***YAML*** - yaml a'int a markdonw language
+    - a sequence fo steps.
+    - Indetation 
+    - on: - when should an event should be triggered.
+    jobs:
+        first-job:
+            runs-on: windows-latest, macos-latest, ubuntu-latest
+            steps:
+                - run: node --version
+                - run: npm --version
